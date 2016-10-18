@@ -1,0 +1,343 @@
+$fontSize:75;
+@function px2Rem($px){
+  @return $px/$fontSize + rem;
+}
+*{
+  margin:0;
+  padding:0;
+}
+img{
+  border:0;
+}
+a{
+  text-decoration: none;
+}
+body{
+  font-family: 'Microsoft Yahei',Tahoma,Helvetica,Arial,sans-serif;
+}
+%webpage {
+  width: 100%;
+  height: 100%;
+}
+html,body {
+  @extend  %webpage;
+}
+.swiper-container {
+  margin: 0 auto;
+  max-width: px2Rem(750);
+  @extend  %webpage;
+}
+.swiper-slide {
+  @extend  %webpage;
+}
+.music-c {
+  position: absolute;
+  background: url("../images/music.png") no-repeat ;
+  background-size: cover;
+  width: px2Rem(40);
+  height: px2Rem(40);
+  right: px2Rem(40);
+  top:px2Rem(30);
+  z-index: 3;
+  animation:cir 1s linear infinite;
+}
+.box-1{
+  background:url(../images/back1.png) no-repeat center 0;
+  background-size:cover;
+  p{
+    position:absolute;
+    width:100%;
+    text-align: center;
+    left:0;
+    top:25%;
+    img{
+      width:86.875%;
+      height:59%;
+    }
+  }
+}
+.box-2 {
+  background: url(../images/back2.png) no-repeat center 0;
+  background-size: cover;
+  transform-style: preserve-3d;
+  perspective: px2Rem(1000);
+  .p1 {
+    position: absolute;
+	@extend  %webpage;
+    width: 100%;
+    left: -13%;
+    top: 5%;
+  }
+  img {
+    width: (640/1209)*250%;
+	height:50%;
+  }
+  .p2 {
+    position: absolute;
+    @extend  %webpage;
+    left: 0;
+    top: 55%;
+    text-align: center;
+    //animation:cir3 3s linear infinite;
+    img {
+      width: 67.1875%;
+      height: 11.5%;
+    }
+  }
+  .p3 {
+    position: absolute;
+    @extend  %webpage;
+    left: 0;
+    top: 70.5%;
+    text-align: center;
+    img {
+      width: 89.375%;
+      height: 15.7%;
+    }
+  }
+}
+.box-3 {
+  @extend  %webpage;
+  background: url(../images/back4.png) no-repeat center 0;
+  background-size: cover;
+  transform-style: preserve-3d;
+  perspective: px2Rem(1000);
+  i{
+    width:36.25%;
+    height:12.5%;
+    display:block;
+    position: absolute;
+    background:url(../images/banner7.png) no-repeat;
+    background-size:cover;
+    left:7%;
+    top:12%;
+  }
+  .a2{
+    font-size: px2Rem(64);
+    color: #ff0505;
+    display: block;
+    position:absolute;
+    font-weight: bold;
+    right:29%;
+    top:5%;
+  }
+  .a1{
+    font-size: px2Rem(64);
+    color: #ff0505;
+    display: block;
+    position:absolute;
+    font-weight: bold;
+    right:11%;
+    top:13%;
+  }
+  .pro1{
+    width:50%;
+    display: block;
+    position:absolute;
+    right:0;
+    top:30%;
+    p{
+      font-weight: bold;
+      font-size: px2Rem(32);
+      color: #402803;
+    }
+    .a3{
+      font-size: px2Rem(96);
+      color: #ff0505;
+      display: block;
+      font-weight: bold;
+      span{
+        font-weight: bold;
+        font-size: px2Rem(32);
+        color: #402803;
+      }
+    }
+  }
+  .pro2{
+    width:50%;
+    display: block;
+    position:absolute;
+    left:3%;
+    top:66%;
+    p{
+      font-weight: bold;
+      font-size: px2Rem(32);
+      color: #402803;
+    }
+    .a3{
+      font-size: px2Rem(96);
+      color: #ff0505;
+      display: block;
+      font-weight: bold;
+      span{
+        font-weight: bold;
+        font-size: px2Rem(32);
+        color: #402803;
+      }
+    }
+  }
+  .img2{
+    width:92.1875%;
+    height:53.9%;
+    position: absolute;
+    left:-19%;
+    top:18%;
+    z-index:0;
+  }
+  .img30{
+    width:37.1875%;
+    height:22.31%;
+    position: absolute;
+    left:8%;
+    top:30%;
+  }
+  .img3{
+    width:37.1875%;
+    height:22.31%;
+    position: absolute;
+    left:8%;
+    top:26%;
+  }
+  .img4{
+    width:92.1875%;
+    height:53.9%;
+    position: absolute;
+    right:-18%;
+    top:52%;
+    z-index:0;
+  }
+  .img5{
+    width:37.1875%;
+    height:22.31%;
+    position: absolute;
+    right:10%;
+    top:60%;
+  }
+  .img65{
+    width:37.1875%;
+    height:22.31%;
+    position: absolute;
+    right:10%;
+    top:65%;
+  }
+}
+.box-4 {
+  @extend %webpage;
+  background: url(../images/back3.png) no-repeat center 0;
+  background-size: cover;
+  transform-style: preserve-3d;
+  perspective: px2Rem(1000);
+  .img6{
+    width:100%;
+    height:45%;
+    position:absolute;
+    display:block;
+    left:-12%;
+    top:-7%;
+  }
+  .img7{
+    position:absolute;
+    display:block;
+    left:26%;
+    top:9%;
+    width:70%;
+	height:56%;
+  }
+  .gif{
+    position:absolute;
+    display:block;
+    left:-20%;
+    top:38%;
+    width:100%;
+  }
+  .img11{
+    position:absolute;
+    display:block;
+    right:0;
+    top:60%;
+    width:48%;
+  }
+  .pro1{
+    width:49%;
+    display: block;
+    position:absolute;
+    right:0;
+    top:54%;
+    p{
+      font-weight: bold;
+      font-size: px2Rem(32);
+      color: #402803;
+    }
+    .a3{
+      font-size: px2Rem(76);
+      line-height:px2Rem(96);
+      color: #ff0505;
+      display: block;
+      font-weight: bold;
+      span{
+        font-weight: bold;
+        font-size: px2Rem(32);
+        color: #402803;
+        margin-left:5%;
+      }
+    }
+  }
+}
+.music-note {
+  position: absolute;
+  background: url("../images/music.gif") no-repeat;
+  background-size: cover;
+  width: px2Rem(70);
+  height: px2Rem(70);
+  right: px2Rem(10);
+  top:0;
+  z-index: 2;
+}
+.swiper-slide {
+  &:after {
+    content: '';
+    position: absolute;
+    left:0;
+    right: 0;
+    margin: 0 auto;
+    width: px2Rem(24);
+    height: px2Rem(18);
+    bottom: px2Rem(27);
+    background: url("../images/arrow.png") no-repeat ;
+    background-size: contain;
+    animation:showUpDown 1s linear infinite;
+  }
+}
+.box-5 {
+  @extend %webpage;
+  background: url(../images/back5.jpg) no-repeat center 0;
+  background-size: cover;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+  .img12{
+      position:absolute;
+      display:block;
+      right:27%;
+      top:12%;
+      width:46%;
+  }
+  .img13{
+    position:absolute;
+    display:block;
+    right:11%;
+    top:41%;
+    width:80%;
+  }
+}
+@keyframes showUpDown {
+  from {
+    bottom: px2Rem(20);
+    opacity: 1;
+  }
+
+  to {
+    bottom: px2Rem(35);
+    opacity: 0;
+  }
+
+}
